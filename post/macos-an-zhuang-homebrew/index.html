@@ -4,17 +4,12 @@
 <head>
   <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-<meta name="description" content="
-欢迎来到我的小站呀，很高兴遇见你！🤝
-
-🏠 关于本站
-👨‍💻 博主是谁
-⛹ 兴趣爱好
-📬 联系我呀
-..." />
+<meta name="description" content="∏#macos 安装homebrew
+参考网址：brew官网
+/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/ma..." />
 <link rel="preload" as="script" href="https://cdn.ampproject.org/v0.js">
 <script async src="https://cdn.ampproject.org/v0.js"></script>
-<title>关于 | 冥龙</title>
+<title>macos 安装homebrew  | 冥龙</title>
 <style amp-custom>
 body{width:100vw;display:flex;flex-direction:column;font-family:'PT Serif',-apple-system-font,"Helvetica Neue","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif,serif;background:#fff}
 :focus{outline:0}
@@ -425,7 +420,7 @@ hr{height:.1333vw;margin-top:5.3333vw;margin-bottom:5.3333vw}
 </style>
 <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style>
 <noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-<link rel="canonical" href="https://dragonwork83.github.io/post/about/" />
+<link rel="canonical" href="https://dragonwork83.github.io/post/macos-an-zhuang-homebrew/" />
 <link rel="shortcut icon" href="https://dragonwork83.github.io/favicon.ico?v=1585997844766">
 <script async custom-element="amp-form" src="https://cdn.ampproject.org/v0/amp-form-0.1.js"></script>
 <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
@@ -438,7 +433,7 @@ hr{height:.1333vw;margin-top:5.3333vw;margin-bottom:5.3333vw}
 
 <script async custom-element="amp-gist" src="https://cdn.ampproject.org/v0/amp-gist-0.1.js"></script>
 
-<link rel="alternate" type="application/atom+xml" title="关于 | 冥龙 - Atom Feed" href="https://dragonwork83.github.io/atom.xml">
+<link rel="alternate" type="application/atom+xml" title="macos 安装homebrew  | 冥龙 - Atom Feed" href="https://dragonwork83.github.io/atom.xml">
 
   
 
@@ -494,27 +489,418 @@ hr{height:.1333vw;margin-top:5.3333vw;margin-bottom:5.3333vw}
       <div class="article-info">
         
         <h2 class="article-title">
-          <a href="https://dragonwork83.github.io/post/about/">关于</a>
+          <a href="https://dragonwork83.github.io/post/macos-an-zhuang-homebrew/">macos 安装homebrew </a>
         </h2>
         <div class="flex-box">
           <div class="flex-box post-meta-box">
             <a class="post-meta" href="https://dragonwork83.github.io"><span
                 class="iconfont icon-mr-postmeta"></span>冥龙</a>
-            <span class="post-meta"><span class="iconfont icon-mr-postmeta"></span>2019-01-25</span>
+            <span class="post-meta"><span class="iconfont icon-mr-postmeta"></span>2020-04-04</span>
           </div>
         </div>
       </div>
       <div class="content">
-        <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
-</blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+        <p>∏#macos 安装homebrew<br>
+参考网址：<a href="https://brew.sh/index_zh-cn">brew官网</a><br>
+<code>/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</code></p>
+<p>#通过brew安装git<br>
+<code>brew install git</code></p>
+<p><a href="https://www.python.org/downloads/mac-osx/">python官网下载</a><br>
+#通过brew安装python3<br>
+先搜索验证：</p>
+<p><code>brew search python3</code></p>
+<p>然后安装python3:</p>
+<p><code>brew install python3</code></p>
+<p>可以看到python3的实际安装目录是/usr/local/Cellar/python3/3.6.2</p>
+<p>输入：<code>python3 --version</code>查看Python版本</p>
+<p>输入：<code>pip3 --version</code>查看pip3版本信息</p>
+<p>使用<code>pip3 list</code>查看其它默认安装的工具包</p>
+<p>修改profile文件，打开你的终端terminal，输入：</p>
+<p><code>open ~/.bash_profile</code></p>
+<p><code>export PATH=${PATH}:/usr/local/Cellar/python3/3.6.2/bin</code></p>
+<p>这行代码就是打开bash_profile的意思，我打开后是空的，bashprofile就像一个小编辑器一样，和终端是两个东西</p>
+<p>自动弹出bash_profile编辑器</p>
+<p>在bash_profile里面写入内容，不是终端terminal里哈，把现有的关于其他Python版本的都屏蔽掉 注意切换自己下载的Python版本路径。我的bash里面最后只有下面的东西了，因为本来就是空的</p>
+<pre><code>PATH=&quot;/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}&quot;
+export PATH
+alias python=&quot;/Library/Frameworks/Python.framework/Versions/3.5/bin/python3.5&quot;
+
+查看Python路径办法
+`which python3`
+
+保存bash_profile方法：
+
+直接关闭bash_profile,转到terminal里面写入，就更新了bash_profile里面的东西
+
+`source .bash_profile`
+
+Python版本切换，把bash_profile里面的关于Python3.5的屏蔽掉，换成你想要的版本，保存就行。
+
+查看有什么库
+
+关闭终端，从新输入pip list
+
+
+```Last login: Wed Nov  7 12:56:47 on ttys000
+appledeMBP:~ apple$ pip list
+Package           Version  
+----------------- ---------
+absl-py           0.4.0    
+asn1crypto        0.24.0   
+astor             0.7.1    
+backports.weakref 1.0.post1
+certifi           2018.8.13
+cffi              1.11.5   
+chardet           3.0.4    
+cryptography      2.3.1    
+cssselect         1.0.3    
+enum34            1.1.6    
+funcsigs          1.0.2    
+futures           3.2.0    
+gast              0.2.0    
+grpcio            1.14.1   
+idna              2.7      
+ipaddress         1.0.22   
+lxml              4.2.4    
+Markdown          2.6.11   
+mock              2.0.0    
+numpy             1.14.5   
+pbr               4.2.0    
+pip               18.0     
+protobuf          3.6.1    
+pycparser         2.18     
+PyMySQL           0.9.2    
+pyquery           1.4.0    
+requests          2.19.1   
+setuptools        39.1.0   
+six               1.11.0   
+tensorboard       1.10.0   
+tensorflow        1.10.0   
+termcolor         1.1.0    
+urllib3           1.23     
+virtualenv        16.0.0   
+Werkzeug          0.14.1   
+wheel             0.31.1   
+appledeMBP:~ apple$ ```
+
+
+解决pip给指定Python版本安装库问题
+
+很多人pip后根本不知道库到底给了哪个Python版本
+
+上面的pip命令默认是Python2的，也就是我们以后pip下载库直接给了Python2，不是我们的Python3
+
+解决：终端输入：
+
+`curl https://bootstrap.pypa.io/get-pip.py | python3`
+
+再看看pip版本：
+
+```appledeMBP:~ apple$ pip --version
+pip 18.0 from /usr/local/lib/python2.7/site-packages/pip (python 2.7)
+appledeMBP:~ apple$ pip3 --version
+pip 18.1 from /Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pip (python 3.5)
+appledeMBP:~ apple$ ```
+
+这就对了，以后下载库就用pip 给Python2下载，pip3就给Python3下载
+
+搞完这些我偶然发现了更好的办法搞定pip呀，透露一下
+
+路径
+
+`/usr/local/bin/pip3.5`
+
+[pip给指定Python版本安装指定版本库的办法](https://blog.csdn.net/BTUJACK/article/details/83858638)
+
+既然pip都随意安装了，有没有更好的随意切换Python版本的工具呢？
+
+有，看我的这个链接，同样是从上面图片得到启发。
+
+我觉得用了下面方法，上面的切换Python版本方法都可以不用做了。
+ 
+[Mac给Sublime Text 配置Python3开发环境](https://blog.csdn.net/BTUJACK/article/details/83828953)
+
+#Sublime Text3安装
+##一、安装控制台
+通过快捷键[ctrl+`]或“View &gt; Show Console”菜单打开控制台，将下面的Python代码粘贴到控制台里
+
+```import urllib.request,os,hashlib; h = '6f4c264a24d933ce70df5dedcf1dcaee' + 'ebe013ee18cced0ef93d5f746d80ef60'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)```
+
+关掉并重新打开Sublime Text 3，如果在Perferences-&gt;package settings中能看到package control这一项，则表示安装成功。
+
+##二、配置Python环境
+运行环境
+
+1、打开Tools &gt; Build System &gt; New Build System..
+
+2、点击New Build System后，会生成一个空配置文件，在这个配置文件内覆盖配置信息，本文python安装路径为“D:/Anaconda3”，（注意区分正反斜杠，请将路径换成python实际安装路径），然后按ctrl+s，将文件保存在默认路径，文件名命名为“Python3”
+mac系统使用：
+</code></pre>
+<p>{<br>
+&quot;cmd&quot;: [&quot;/usr/local/bin/python3&quot;,&quot;-u&quot;,&quot;$file&quot;],<br>
+}</p>
+<pre><code>win系统使用
+
+```{
+    &quot;cmd&quot;: [&quot;D:/Anaconda3/python.exe&quot;,&quot;-u&quot;,&quot;$file&quot;],
+    &quot;file_regex&quot;: &quot;^[ ]*File \&quot;(...*?)\&quot;, line ([0-9]*)&quot;,
+    &quot;selector&quot;: &quot;source.python&quot;,
+}
+</code></pre>
+<p>保存此文件时，系统会默认保存路径，我们需要将此文件命名为Python3.sublime-build即可，注意后缀一定要正确！</p>
+<p>###字体及字号<br>
+1、打开Preferences –&gt;&gt;Settings(Settings User),在右侧添加如下代码（font_face及font_size可根据个人喜好更改）</p>
+<pre><code class="language-{">    &quot;color_scheme&quot;: &quot;Packages/Color Scheme - Default/Monokai.sublime-color-scheme&quot;,
+    &quot;font_face&quot;: &quot;Consolas&quot;,
+    &quot;font_size&quot;: 14,
+    &quot;ignored_packages&quot;:
+    [
+        &quot;Vintage&quot;
+    ],
+    &quot;update_check&quot;: false,
+    // The number of spaces a tab is considered equal to
+    &quot;tab_size&quot;: 4,
+    // Set to true to insert spaces when tab is pressed
+    &quot;translate_tabs_to_spaces&quot;: true,
+    //设置保存时自动转换
+    &quot;expand_tabs_on_save&quot;: true
+}```
+
+##常用插件介绍及安装
+一、SublimeCodeIntel
+支持语言
+JavaScript, ES6, Mason, XBL, XUL, RHTML, SCSS, Python, HTML, Ruby, Python, XML, XSLT, Django, HTML5, Perl, CSS, Twig, Less, Smarty, Node.js, Tcl, TemplateToolkit, PHP.
+1、打开preferences-&gt;packages settings -&gt;Package Control -&gt;Settings-User,检查是否有如下红框代码，如果没有得手动添加
+![img](https://images2018.cnblogs.com/blog/629575/201808/629575-20180813172734097-26923195.png)
+
+2、点击preferences中的browse Packages，进入SublimeCodeIntel文件夹，在当前的路径下新建.codeintel文件夹(windows中文件命名的时候为 .codeintel. )，之后进入到 .codeintel文件夹中，新建文件“config.log”文件，打开输入（下文以路径“D:\Anaconda3”为例，实际配置时请根据具体安装路径修改）：
+</code></pre>
+<p>{<br>
+“PHP”：{<br>
+“php”：'/usr/bin/php'<br>
+“phpExtraPaths”：[]<br>
+“phpConfigFile”：'php.ini'<br>
+}，<br>
+“JavaScript”：{<br>
+“javascriptExtraPaths”：[]<br>
+}，<br>
+“Perl”：{<br>
+“perl”：“/usr/bin/ perl”，<br>
+“perlExtraPaths”：[]<br>
+}，<br>
+“Ruby”：{<br>
+“ruby”：“/usr/bin/ruby​​”，<br>
+“rubyExtraPaths”：[]<br>
+}，<br>
+“Python”：{<br>
+“python”：'/usr/bin/python'<br>
+“pythonExtraPaths”：[]<br>
+}，<br>
+“Python3”：{<br>
+“python”：'/usr/bin/python3'<br>
+“pythonExtraPaths”：[]<br>
+}<br>
+}</p>
+<pre><code>
+ps:打开/关闭隐藏文件快捷键：shift+commnd+.
+
+win系统
+```&quot;python3&quot;:{
+    &quot;python&quot;:&quot;D:/Anaconda3/python.exe&quot;,
+    &quot;pythonExtraPaths&quot;:[
+         &quot;D:/Anaconda3/DLLs&quot;,
+         &quot;D:/Anaconda3/Lib&quot;,
+         &quot;D:/Anaconda3/Lib/lib-tk&quot;,
+         &quot;D:/Anaconda3/Lib/site-packages&quot;,
+    ]
+}```
+
+##SublimeREPL
+添加快捷键后，可直接运行当前文件，非常方便
+1、安装SublimeREPL插件后，打开Preferences-&gt;Key Bindings，添加快捷键：
+</code></pre>
+<p>[<br>
+{<br>
+&quot;keys&quot;: [&quot;f5&quot;],<br>
+&quot;caption&quot;: &quot;SublimeREPL: Python - RUN current file&quot;,<br>
+&quot;command&quot;: &quot;run_existing_window_command&quot;,<br>
+&quot;args&quot;: {<br>
+&quot;id&quot;: &quot;repl_python_run&quot;,<br>
+&quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;<br>
+}<br>
+}<br>
+]</p>
+<pre><code>
+###SublimeTmpl
+介绍
+
+安装插件后，可以通过快捷键按照模板快速新建文件
+
+使用方法
+
+1、安装SublimeTmpl插件后，打开Preferences-&gt;Package Settings-&gt;SublimeTmpl-&gt;Settings User，添加以下内容
+</code></pre>
+<p>{<br>
+&quot;disable_keymap_actions&quot;: false, // &quot;all&quot;; &quot;html,css&quot;<br>
+&quot;date_format&quot; : &quot;%Y-%m-%d %H:%M:%S&quot;,<br>
+&quot;attr&quot;: {<br>
+&quot;author&quot;: &quot;Yong Lee&quot;,<br>
+&quot;email&quot;: &quot;honkly@163.com&quot;,<br>
+&quot;link&quot;: &quot;http://www.cnblogs.com/honkly/&quot;<br>
+}<br>
+}</p>
+<pre><code>
+2、添加快捷键，打开Preferences-&gt;Key Bindings，添加红框中的快捷键代码
+</code></pre>
+<p>[<br>
+{<br>
+&quot;caption&quot;: &quot;Tmpl: Create python&quot;, &quot;command&quot;: &quot;sublime_tmpl&quot;,<br>
+&quot;keys&quot;: [&quot;ctrl+alt+n&quot;], &quot;args&quot;: {&quot;type&quot;: &quot;python&quot;}<br>
+},<br>
+{<br>
+&quot;keys&quot;: [&quot;f5&quot;],<br>
+&quot;caption&quot;: &quot;SublimeREPL: Python - RUN current file&quot;,<br>
+&quot;command&quot;: &quot;run_existing_window_command&quot;,<br>
+&quot;args&quot;: {<br>
+&quot;id&quot;: &quot;repl_python_run&quot;,<br>
+&quot;file&quot;: &quot;config/Python/Main.sublime-menu&quot;<br>
+}<br>
+}<br>
+]</p>
+<pre><code>测试
+
+打开Sublime Text 3，上文中SublimeTmpl插件设置的快捷键是&quot;Ctrl+alt+n&quot;，按快捷键后成功新建文件如下
+
+
+##Anaconda
+介绍
+
+代码提示等许多功能，必备
+
+安装方法
+
+1、Preferences-&gt;Package Settings-&gt;Anaconda-&gt;Settings Default,修改&quot;python_interpreter&quot;为实际Python安装路径
+
+2、Preferences-&gt;Package Settings-&gt;Anaconda-&gt;Settings User，添加如下内容
+</code></pre>
+<p>{<br>
+&quot;python_interpreter&quot;:&quot;D:/Anaconda3/python.exe&quot;,<br>
+&quot;suppress_word_completions&quot;:true,<br>
+&quot;suppress_explicit_completions&quot;:true,<br>
+&quot;comlete_parameters&quot;:true,<br>
+&quot;swallow_startup_errors&quot;:true,<br>
+&quot;anaconda_linting&quot;:false<br>
+}</p>
+<pre><code>测试
+
+1、打开Sublime Text3，新建任意*.py文件，输入语句测试，如图
+
+
+#git的安装使用
+通过package control安装git
+然后我们需要建立一个本地仓库，安装完git后，在Mac终端中我们进入我们项目的文件夹中，使用git init初始化本地仓库：
+·git init`
+
+这一步我们也可以使用sublime中的命令。
+随后在sublime中，我们将建立一个README.md文件，并使用git add all加入版本控制中。
+![img](https://img2018.cnblogs.com/blog/1168087/201908/1168087-20190827105533815-827975742.png)
+
+随后我们在sublime的命令中使用git commit将更改提交至本地仓库，会弹出一个界面，在白色字体上修改即可。
+![img](https://img2018.cnblogs.com/blog/1168087/201908/1168087-20190827105554177-1287457726.png)
+
+我们在第一行输入我们提交的commets，然后Command+W或者直接关闭文件即可提交。　　
+目前我们以及可以将Sublime中的修改更新到本地仓库中，但是还没有更新到远端Github中，接下来我们将本地文件连接过去。
+
+##安装MarkdownPreview
+
+##二、本地仓库连接GitHub
+第一步，在你的github在账户上创建一个新的repository，
+![img](https://img2018.cnblogs.com/blog/1168087/201908/1168087-20190827110207549-1786780095.png)
+注意这里先不急添加README.md文件，因为这样的话在网页中你会看见如下提示：
+
+注意：每个人的提示不一样，因为建立的repository名字是不一样的。
+&gt;`echo &quot;# fffffff&quot; &gt;&gt; README.md`
+
+&gt;`git init`
+
+&gt;`git add README.md`
+
+&gt;`git commit -m &quot;first commit&quot;`
+
+&gt;`git remote add origin https://github.com/hangingter/hhhh.git`
+
+&gt;`git push -u origin master`
+
+没错，就是让你在你的命令行（注意是在mac 的终端中）属于上述几句话，估计还会让你输入用户名和密码。然后你就提交了第一个文件README.pd
+
+注意如果你没有执行这一步的话，在没有任何文件的repository中
+
+`git push -u origin master`
+更新文件的话会报错：
+
+`error: src refspec master does not match any. `
+这是因为你的本地仓库没有任何文件，所以无法更新。
+
+在github上创建了你的repository后，接下来就使用本地仓库连接远程，
+![img](https://img2018.cnblogs.com/blog/1168087/201908/1168087-20190827111241705-414458488.png)
+
+同样的，在终端中输入（加粗的那句修改成你的）：
+
+`git remote add origin https://github.com/hangingter/fffffff.git`
+
+这样就让本地仓库连接到了远端，
+
+#三、执行一次完整的更新操作
+##第一步：
+在sublime中修改你的文件
+
+![img](https://img2018.cnblogs.com/blog/1168087/201908/1168087-20190827111728380-1847246353.png)
+##第二步：
+在sublime ( shift+ command + p ）或者mac命令行中输入：
+
+`git add all`  或者： `git add current file`（这是只添加当前文件）
+
+这一步是为了将文件加入版本控制中，好像是git的一种缓存机制，具体原理我还不了解，如果你不add的话，最后使用命令：
+
+`git add . git push -u origin master`
+
+提交会报出如下错误：
+
+Branch master set up to track remote branch master
+
+##第三步（必须提交commit）：
+每一次更改都需要做一次commit，否则提交会报出如下错误：Branch master set up to track 
+`remote branch master`
+
+可以使用终端命令行：
+
+`git commit -m 'secend commit'`
+
+也可以使用前文中的sublime的git commit命令，
+
+##第四步：
+最后使用命令：
+
+`git push -u origin master`
+
+将代码更改以及commit信息就被提交到github上。
+
+其他：git的相关命令还有很多，可以自行查阅相关文件，或者在命令行中输入git --help查看。
+
+</code></pre>
 
       </div>
 
+      
+      <nav class="post-nav">
+        
+        
+        <div class="nav-next">
+          <a class="post-nav-link-active" title="pkuxkx mudlet" href="https://dragonwork83.github.io/post/pkuxkx-mudlet/">下一篇文章</a>
+          
+
+        </div>
+      </nav>
       
 
       
